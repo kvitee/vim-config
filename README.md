@@ -23,20 +23,8 @@ e words and lines with parentheses, quotes, tags and more.
 
 ## Installation
 
-Install Vim-Plug:
+Just get installation script and run it:
 
 ```sh
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
-
-Copy `.vimrc` file in your home directory:
-
-```sh
-curl -fLo ~/.vimrc https://raw.githubusercontent.com/kvitee/vim-config/main/.vimrc
-```
-
-And finally install plugins with `:PlugInstall` command:
-
-```sh
-vim +PlugInstall +qa
+curl -fsSL https://raw.githubusercontent.com/kvitee/vim-config/main/install.sh | sh
 ```
