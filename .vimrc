@@ -1,54 +1,43 @@
 "--- Settings ---"
 
 " Disable mouse
-set mouse=
+se mouse=
 
 " Enable relative line numbers
-set nu
-set rnu
+se nu
+se rnu
 
 " Disable backup- and swapfiles
-set nobk
-set noswf
+se nobk
+se noswf
 
 " Number of lines around cursor
-set so=8
+se so=8
 
 " File format and encoding
-set ff=unix
-set enc=utf-8
+se ff=unix
+se enc=utf-8
 
 " Auto indents
-set ai
-set si
+se ai
+se si
 
 " Tab using spaces
-set et
+se et
 
 " Size of expanded tabs (real tabs are default)
-set sts=2
-set sw=2
+se sts=2
+se sw=2
 
 " Wrap lines breaking by words
-set wrap
-set lbr
+se wrap
+se lbr
 
 " Use 24-bit colors
-set tgc
+se tgc
 
 " Dark background
-set bg=dark
-
-"--- Netrw file explorer settings ---"
-
-" Hide banner
-let g:netrw_banner = 0
-
-" Show tree instead of plain view
-let g:netrw_liststyle = 3
-
-" Split window when open file
-let g:netrw_browse_split = 3
+se bg=dark
 
 "--- Plugins ---"
 
@@ -79,11 +68,19 @@ colo gruvbox
 " Transparent background
 hi Normal guibg=NONE ctermbg=NONE
 
-" Gruvbox contrast variant
-let g:gruvbox_contrast_dark = 'hard'
-
 " Javascript docs highlighting
 let g:javascript_plugin_jsdoc = 1
+
+"--- Netrw file explorer settings ---"
+
+" Hide banner
+let g:netrw_banner = 0
+
+" Show tree instead of plain view
+let g:netrw_liststyle = 3
+
+" Split window when open file
+let g:netrw_browse_split = 3
 
 "--- Key mappings ---"
 
