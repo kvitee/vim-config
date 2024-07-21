@@ -1,11 +1,8 @@
 # Install Vim-Plug
-curl -fsLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+curl -fsSLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-# Copy .vimrc
-curl -fsLo ~/.vimrc https://raw.githubusercontent.com/kvitee/vim-config/main/.vimrc
+# Copy .vimrc and remove all comments and empty lines
+curl -fsSL https://raw.githubusercontent.com/kvitee/vim-config/main/.vimrc | sed 's/ *".*$//;/^$/d' > ~/.vimrc
 
 # Install plugins
 yes | vim +PlugInstall +qa
-
-# Echo success message
-echo "\nVim config installed successfully!"
