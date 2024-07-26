@@ -39,6 +39,9 @@ se tgc
 " Dark background
 se bg=dark
 
+" For corrent work in tmux
+se term=xterm-256color
+
 "--- Plugins ---"
 
 " Begin Vim-Plug section
