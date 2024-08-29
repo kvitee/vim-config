@@ -5,4 +5,4 @@ curl -fsSLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent
 curl -fsSL https://raw.githubusercontent.com/kvitee/vim-config/main/.vimrc | sed 's/ *".*$//;/^$/d' > ~/.vimrc
 
 # Install plugins
-yes | vim +PlugInstall +qa
+yes | vim +PlugInstall +qa 2> /dev/null
