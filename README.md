@@ -28,3 +28,5 @@ Just get installation script and run it:
 ```sh
 curl -fsSL https://raw.githubusercontent.com/kvitee/vim-config/main/install.sh | sh
 ```
+
+If You had some `.vimrc` file before it will be moved to `~/.pre.vimrc` file.
