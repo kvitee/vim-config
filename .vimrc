@@ -7,6 +7,9 @@ se mouse=
 se nu
 se rnu
 
+" Highlight 80th column
+se cc=80
+
 " Disable backup- and swapfiles
 se nobk
 se noswf
